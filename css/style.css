@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vw;
+    background-color: rgba(65, 76, 176, 1);
+}
+.destination {
+    width: 30vw;
+    height: 40vh;
+    border: 1px solid black;
+    position:relative;
+    left: 35vw;
+    right: 35vw;
+    background-size: cover;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.mountain {
+    background-image: url("../img/mountain.jpg");
+
+}
+.city {
+    background-image: url("../img/city.jpg");
+}
+.beach {
+    background-image: url("../img/beach.jpg");
+}
+.title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(55, 39, 39, 0.5);
+}
