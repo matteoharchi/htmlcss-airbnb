@@ -3,14 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-nav{
+nav {
   width: 100vw;
   height: 50px;
   background-color: lightgreen;
   display: block;
 }
-
 #logo {
   background-color: red;
   height: 50px;
@@ -24,23 +22,26 @@ ul {
   line-height: 50px;
   vertical-align: middle;
 }
-li.link{
+li.link {
   line-height: 50px;
   vertical-align: middle;
   margin-right: 20px;
   margin-top: 0;
   display: inline-block;
 }
-.link:hover{
+.link:hover {
   background-color: orange;
   cursor: pointer;
-}
-.choose{
-  text-align: center;
-  font-family: 'Lobster', cursive;
   color: white;
 }
-.container{
+.choose {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+.container {
     width: 100vw;
     height: 100vw;
     background-color: rgba(65, 76, 176, 1);
@@ -58,7 +59,6 @@ li.link{
 }
 .mountain {
     background-image: url("../img/mountain.jpg");
-
 }
 .city {
     background-image: url("../img/city.jpg");
@@ -66,17 +66,29 @@ li.link{
 .beach {
     background-image: url("../img/beach.jpg");
 }
-.title{
+.title {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: rgba(55, 20, 10, 0.5);
+}
+.overlay:hover {
+  display: none;
+}
+.destination:hover {
+  cursor: pointer;
+}
+.overlay:hover + .title {
+  text-decoration: underline;
+}
+.title:hover + .overlay {
+  display: none;
 }
