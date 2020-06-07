@@ -98,9 +98,7 @@ li.active {
 .overlay:hover {
   display: none;
 }
-.destination:hover {
-  cursor: pointer;
-}
 .title:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
