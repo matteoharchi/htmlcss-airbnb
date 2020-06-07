@@ -3,37 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* NAV */
 nav {
   width: 100vw;
   height: 50px;
   background-color: lightgreen;
   display: block;
+  position: relative;
 }
-#logo {
-  background-color: red;
-  height: 50px;
-  width: 50px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 30px;
+/* LOGO */
+.logo img{
+    width: auto;
+    height: 30px;
+    margin: 10px;
+    vertical-align: middle;
 }
+.logo, ul{
+    display: inline-block;
+    position:absolute;
+}
+.logo:hover {
+    cursor: pointer;
+}
+/* LINK NAV */
 ul {
   display: inline-block;
   line-height: 50px;
   vertical-align: middle;
+  bottom: 0;
+  left: 200px;
 }
-li.link {
+li.active {
   line-height: 50px;
   vertical-align: middle;
   margin-right: 20px;
   margin-top: 0;
   display: inline-block;
 }
-.link:hover {
+.active:hover {
   background-color: orange;
   cursor: pointer;
   color: white;
 }
+/* TITOLO */
 .choose {
   text-align: center;
   font-family: 'Lobster', cursive;
@@ -41,6 +53,7 @@ li.link {
   color: white;
   margin-bottom: 20px;
 }
+/* DESTINAZIONI */
 .container {
     width: 100vw;
     height: 100vw;
@@ -72,23 +85,22 @@ li.link {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+/* effetti overlay */
 .overlay {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(55, 20, 10, 0.5);
+    background-color: rgba(116, 100, 95, 0.5);
 }
+/* [.overlay:hover display:none] funziona su chrome ma non su firefox (funziona mettendo hover da ispeziona elemento ma non passandoci col mouse.)  */
 .overlay:hover {
   display: none;
 }
 .destination:hover {
   cursor: pointer;
 }
-.overlay:hover + .title {
-  text-decoration: underline;
-}
-.title:hover + .overlay {
-  display: none;
+.title:hover {
+    text-decoration: underline;
 }
